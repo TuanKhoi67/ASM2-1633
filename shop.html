@@ -8,134 +8,231 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <title>Document</title>
+    
 </head>
 <body>
-    
+    <!-- Header -->
     <div id="header">
-        <div class="logo"><img src="/assets/img/brand-lego.svg" alt="" style="width: 55px; height: 55px;" ></div>
+        <div class="logo"><img src="/assets/img/brand-lego.svg" alt="" style="width: 55px; height: 55px;"></div>
         <ul id="nav">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/shop.html">SHOP</a></li>
             <li><a href="#">DISCOVER</a></li>
             <li><a href="#">HELP</a></li>
         </ul>
-
         <div class="search-btn">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
 
-    
     <div>
-        <h1 style="margin-top: 100px;">Các sản phẩm hiện có:</h1>
+        <h3 style="margin-top: 100px; margin-left: 16%;">Available products:</h1>
     </div>
-    <div class="container mt-5">
-        <div class="row" id="products">
-            <!-- 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/bltf876ca701fbacd4a/40725.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 1</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
-                    </div>
-                </div>
+    <div class="container mt-2">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-2 div" id="divider">
+                <h3>Menu</h3>
+                <ul class="list-group">
+                    <li class="list-group-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="productTypeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product Type
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productTypeDropdown">
+                            <li><a class="dropdown-item" href="#">Sets</a></li>
+                            <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                            <li><a class="dropdown-item" href="#">Adults</a></li>
+                            <li><a class="dropdown-item" href="#">Helmets</a></li>
+                            <li><a class="dropdown-item" href="#">Backpacks & Lunch Boxes</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="priceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Price
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="priceDropdown">
+                            <li><a class="dropdown-item" href="#">$0 - $25</a></li>
+                            <li><a class="dropdown-item" href="#">$25 - $50</a></li>
+                            <li><a class="dropdown-item" href="#">$50 - $75</a></li>
+                            <li><a class="dropdown-item" href="#">$75 - $100</a></li>
+                            <li><a class="dropdown-item" href="#">$100+</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Theme
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="themeDropdown">
+                            <li><a class="dropdown-item" href="#">Architecture</a></li>
+                            <li><a class="dropdown-item" href="#">Art</a></li>
+                            <li><a class="dropdown-item" href="#">Batman</a></li>
+                            <li><a class="dropdown-item" href="#">Classic</a></li>
+                            <li><a class="dropdown-item" href="#">Creator 3-in-1</a></li>
+                            <li><a class="dropdown-item" href="#">Creator Expert</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="interestDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Interest
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="interestDropdown">
+                            <li><a class="dropdown-item" href="#">Aeroplanes</a></li>
+                            <li><a class="dropdown-item" href="#">Animals</a></li>
+                            <li><a class="dropdown-item" href="#">Art, Design & Music</a></li>
+                            <li><a class="dropdown-item" href="#">Arts and Crafts</a></li>
+                            <li><a class="dropdown-item" href="#">Boats</a></li>
+                            <li><a class="dropdown-item" href="#">Buildings</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="availabilityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Availability
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="availabilityDropdown">
+                            <li><a class="dropdown-item" href="#">Available Now</a></li>
+                            <li><a class="dropdown-item" href="#">Back Order</a></li>
+                            <li><a class="dropdown-item" href="#">Pre-order</a></li>
+                            <li><a class="dropdown-item" href="#">Out of Stock</a></li>
+                            <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="pieceCountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Piece Count
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pieceCountDropdown">
+                            <li><a class="dropdown-item" href="#">1-99</a></li>
+                            <li><a class="dropdown-item" href="#">100-249</a></li>
+                            <li><a class="dropdown-item" href="#">250-499</a></li>
+                            <li><a class="dropdown-item" href="#">500-999</a></li>
+                            <li><a class="dropdown-item" href="#">1000-1999</a></li>
+                            <li><a class="dropdown-item" href="#">2000+</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="featuredDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Featured
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuredDropdown">
+                            <li><a class="dropdown-item" href="#">Exclusives</a></li>
+                            <li><a class="dropdown-item" href="#">Hard to find</a></li>
+                            <li><a class="dropdown-item" href="#">New</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <!-- 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/bltd01c9a5d39a5b3bc/10341.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 2</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+
+            <!-- Menu -->
+            <div class="col-md-9">
+                <div class="row" id="products">
+                    <!-- 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/bltf876ca701fbacd4a/40725.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 1</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary ">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/blta9e2bb2199eed6d4/43242.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 3</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+                    <!-- 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/bltd01c9a5d39a5b3bc/10341.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 2</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- 4 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/blt816b7e3b339c9992/31213.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 4</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+                    <!-- 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blta9e2bb2199eed6d4/43242.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 3</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- 5 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/blt51cfcb2db00dd939/21334.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 5</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+                    <!-- 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blt816b7e3b339c9992/31213.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 4</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/bltd5e6af3715a3024b/21346.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 6</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+                    <!-- 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blt51cfcb2db00dd939/21334.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 5</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- 7 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/blte32d946cf23b2e5c/21342.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 7">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 7</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+                    <!-- 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/bltd5e6af3715a3024b/21346.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 6</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- 8 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/blt047686711ed3cb43/75350.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 8">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 8</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+                    <!-- 7 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blte32d946cf23b2e5c/21342.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 7</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- 9 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.lego.com/cdn/cs/set/assets/blt98788132422b6a0f/75304_WEB_PRI_NOBG.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 9">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Product 9</h5>
-                        <p class="card-text">Some description about the Lego product.</p>
-                        <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        <a href="#" class="btn btn-success">Thêm vào giỏ hàng</a>
+                    <!-- 8 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blt047686711ed3cb43/75350.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 8</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blt98788132422b6a0f/75304_WEB_PRI_NOBG.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" class="card-img-top" alt="Lego Product 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Lego Product 9</h5>
+                                <p class="card-text">Some description about the Lego product.</p>
+                                <a href="#" class="btn btn-primary">Product details</a>
+                                <a href="#" class="btn btn-success">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,7 +241,7 @@
     <div id="footer">
         <div class="footer-container1">
             <div class="footer-wrapper">
-                <div class="logo"><img src="/assets/img/brand-lego.svg" alt="" style="width: 100px; height: 100px;" ></div>
+                <div class="logo"><img src="/assets/img/brand-lego.svg" alt="" style="width: 100px; height: 100px;"></div>
                 <p class="footer-information"> Gift Card </p>
                 <p class="footer-information"> Find inspiration </p>
                 <p class="footer-information"> LEGO Catalogues </p>
@@ -166,7 +263,7 @@
                 </ul>
             </div>
             <div class="footer-bottom-wrapper">
-                <h4>SUPORT</h4>
+                <h4>SUPPORT</h4>
                 <ul style="list-style: none;">
                     <li>Contact us</li>
                     <li>Find building instructions</li>
@@ -190,7 +287,6 @@
             </div>
         </div>
     </div>
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
