@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+#header {
+    height: 75px;
+    background-color: rgb(255, 225, 0);
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#header .logo img {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+#nav {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+#nav li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 25px;
+}
+
+#nav li:hover a {
+    text-decoration: underline;
+}
+
+.search-btn {
+    align-items: center;
+    font-size: 1.3em;
+    margin-left: auto;
+}
+
+#slider{
+    margin-top: 75px;
+    padding-top: 31.5%;
+    background: url('/assets/img/Icons-10330-HT-202403-Hero-Standard-Large-new.webp') top center / cover no-repeat ;
+}
+
+#slider .text-slider{
+    position: absolute;
+    text-align: right;
+    top: 35%;
+    right: 10%;
+    background-color: transparent;
+    color: #fff;
+    transform: translateY(-50%);
+    padding: 0px;
+    max-width: 35%;
+}
+
+#slider .text-heading{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#slider .text-content{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+}
+
+.button-shopnow .btn-light{
+    margin: 20px 10px 0px;
+    padding: 10px 16px;
+}
+
+.button-shopnow .btn-light:hover, .fa-solid.fa-arrow-right:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.button-shopnow .fa-solid.fa-arrow-right{
+    margin-left: 12px;
+}
+
+#sidebar {
+    padding: 40px 30px;
+    background-color: #e4e5ec;
+}
+
+#sidebar .layout-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-inner-content h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.layout-sidebar .card-outer-content{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.card-content-styles img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content-styles .text-card-content{
+    text-align: center;
+}
+
+.card-content-styles .text-card-content h3{ 
+    font-size: 20px;
+}
+
+
+#footer {
+    background-color: #201d48;
+    display: flex;
+    color: #fff;
+}
+
+#footer .footer-container1{
+    flex: 1;
+}
+
+#footer .footer-container2{
+    flex: 2;
+    display: flex;
+    padding: 40px 40px 0 0;
+}
+
+
+.footer-wrapper{
+    padding: 40px 20px 20px 40px;
+}
+
+.footer-wrapper .logo{
+    margin-bottom: 20px;
+}
+
+.footer-wrapper p{
+    padding: 10px 0;
+    margin: 0;
+}
+
+.footer-bottom-wrapper h4{
+    margin-bottom: 25px;
+    padding: 0 32px;
+}
+
+.footer-bottom-wrapper ul li{
+    padding: 10px 15px 10px 0;
+}
