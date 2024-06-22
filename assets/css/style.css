@@ -164,6 +164,10 @@ html {
     padding: 0 32px;
 }
 
+.footer-container2 .footer-bottom-wrapper li:hover{
+    text-decoration: underline;
+}
+
 .footer-bottom-wrapper ul li{
     padding: 10px 15px 10px 0;
 }
