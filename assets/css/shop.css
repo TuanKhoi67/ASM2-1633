@@ -2,11 +2,25 @@
     height: 200px;
     object-fit: cover;
 }
+
 .div {
     border-right: 2px solid #ddd;
     height: 100%;
 }
+
 .dropdown-toggle {
     text-decoration: none;
     color: black;
+}
+
+.shop-first {
+    color: #ffffff;
+    background-color: black;
+    margin-top: 5%;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+}
+
+.menu {
+    margin-bottom: 10%;
 }
