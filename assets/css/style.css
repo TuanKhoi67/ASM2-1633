@@ -215,6 +215,18 @@ html {
     text-decoration: underline;
 }
 
+/* welcome */
+#welcome{
+    padding: 40px 30px;
+}
+
+.text-welcome{
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 14px;
+    margin: 0 16px;
+}
+
 /* footer */
 #footer {
     background-color: #201d48;
