@@ -269,7 +269,7 @@ html {
     display: flex;
     flex-direction: column;
     padding: 12px 20px 20px;
-    height: 200px;
+    height: 180px;
 }
 
 .text-wrapper h3 {
@@ -283,7 +283,6 @@ html {
   color: black;
   font-weight: 500;
   padding: 10px 15px;
-  margin-top: auto;
 }
 
 .text-wrapper p{
