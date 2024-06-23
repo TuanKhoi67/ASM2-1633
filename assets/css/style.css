@@ -42,7 +42,7 @@ html {
     padding: 0 25px;
 }
 
-#nav li:hover a {
+#nav li:hover {
     text-decoration: underline;
 }
 
@@ -98,7 +98,7 @@ html {
 
 #sidebar {
     padding: 40px 30px;
-    background-color: #e4e5ec;
+    
 }
 
 #sidebar .layout-sidebar{
@@ -131,7 +131,91 @@ html {
     font-size: 20px;
 }
 
+/* Spotlight */
+.layout-styles{
+    padding: 40px 30px;
+    background-color: #e4e5ec;
+}
 
+.content-spotlight {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-spotlight h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.content-spotlight .content-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content-block .block-left{
+    display: flex;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-block .block-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.block-right .right-top{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.block-right .right-bottom{
+    display: flex;
+}
+
+.content-block .block-left img{
+    max-width: 100%;
+    height: auto;
+}
+
+.block-right .right-top img, 
+.block-right .right-bottom img {
+    max-width: 50%;
+    height: auto;
+}
+
+.right-top .text-block{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 154, 84);
+    padding: 20px;
+    justify-content: center;
+}
+
+.right-bottom .text-block{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+.text-block h2, a{
+    font-weight: 500;
+}
+
+.button-spotlight a i{
+    padding-left: 10px;
+}
+
+.text-block .button-spotlight:hover {
+    text-decoration: underline;
+}
+
+/* footer */
 #footer {
     background-color: #201d48;
     display: flex;
