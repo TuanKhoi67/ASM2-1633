@@ -47,9 +47,23 @@ html {
 }
 
 .search-btn {
-    align-items: center;
-    font-size: 1.3em;
-    margin-left: auto;
+    margin-left: 73%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.search-btn i {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.search-btn:hover i {
+    color: #000; 
 }
 
 #slider{
