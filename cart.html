@@ -19,11 +19,17 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/shop.html">Shop</a></li>
             <li><a href="#">Discover</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
 
         <div class="search-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="search-bar" id="search-bar">
+            <input type="text" placeholder="Search...">            
         </div>
     </div>
     
@@ -160,4 +166,18 @@
         </div>
     </div>
 </body>
+<script>
+    document.getElementById('search-icon').onclick = function() {
+        var searchBar = document.getElementById('search-bar');
+        if (searchBar.style.display === 'none' || searchBar.style.display === '') {
+            searchBar.style.display = 'flex';
+        } else {
+            searchBar.style.display = 'none';
+        }
+    }
+    
+    document.getElementById('search-close').onclick = function() {
+        document.getElementById('search-bar').style.display = 'none';
+    }
+    </script>   
 </html>
