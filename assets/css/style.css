@@ -10,7 +10,7 @@ html {
 
 #header {
     height: 75px;
-    background-color: rgb(255, 225, 0);
+    background-color: #ffd502;
     padding: 0px 30px;
     display: flex;
     align-items: center;

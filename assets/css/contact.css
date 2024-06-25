@@ -1,0 +1,77 @@
+/* Main contact */
+#quicklink-banner{
+    margin-top: 75px;
+    text-align: center;
+    display: flex;
+    background-color: #ffd502;
+    align-items: center;
+    justify-content: center;
+}
+
+.quicklink-picture img{
+    height: 192px;
+    width: 192px;
+}
+
+.quicklink-container h1{
+    padding: 20px;
+}
+
+.quicklink-grid {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.quicklink-grid a{
+    color: black;
+    text-decoration: none;
+}
+
+.icon {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.icon i {
+    color: #333; 
+    font-size: 24px; 
+}
+.quicklink-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.quicklink-text a:hover{
+    text-decoration: underline;
+}
+
+.quicklink-text a{
+    padding-top: 10px;
+}
+
+.card-grid-styles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    padding: 50px;
+    grid-auto-rows: 1fr;
+}
+.card-container {
+    border: 1px solid rgb(143, 143, 143);
+    padding: 20px;
+}
+
+.card-container:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+
