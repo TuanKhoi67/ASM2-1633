@@ -46,15 +46,11 @@ html {
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
 .search-btn > a{
     padding-left: 20px;
 }
 
-.search-btn {   
-=======
 .search-btn {
->>>>>>> 1f2f3288bc96283952344d0420cbc9535845c8c6
     margin-left: auto;
     cursor: pointer;
     transition: all 0.3s ease;
