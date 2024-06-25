@@ -1,3 +1,22 @@
+.thumbnail-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    display: none; /* Hide the thumbnail carousel */
+}
+
+.thumbnail-carousel img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; 
+    margin-right: 10px; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail-carousel img:hover {
+    transform: scale(1.2); 
+}
+
 /* Styles for the header and navigation menu */
 #header {
     background-color: #f8f9fa;
