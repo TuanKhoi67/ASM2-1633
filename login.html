@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="logo">
+            <img src="/assets/img/brand-lego.svg" alt="" style="width: 55px; height: 55px;" >
+        </div>
+        <ul id="nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="search-btn">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="login.html">
+                <i class="fa-solid fa-wheelchair"></i>
+            </a>
+        </div>
+        <div class="search-bar" id="search-bar">
+            <input type="text" placeholder="Search...">            
+        </div>
+    </div>
+    
+    <!-- main -->
+    <div class="container">
+        <div class="login-container">
+            <h2 class="text-center">Sign in</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <i class="fa fa-user"></i>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <i class="fa fa-eye"></i>
+                </div>
+                <div class="forgot-links">
+                    <a href="#" class="text-primary">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+            </form>
+        </div>
+        <div class="login-container mt-3 newuser">
+            <h3 class="text-center">New user</h3>
+            <a href="#"><button class="btn btn-secondary btn-block rounded">Create account</button></a>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer-container1">
+            <div class="footer-wrapper">
+                <div class="logo"><img src="/assets/img/brand-lego.svg" alt="" style="width: 100px; height: 100px;" ></div>
+                <p class="footer-information"> Gift Card </p>
+                <p class="footer-information"> Find inspiration </p>
+                <p class="footer-information"> LEGO Catalogues </p>
+                <p class="footer-information"> Find a LEGO Store </p>
+            </div>
+        </div>
+
+        <div class="footer-container2">
+            <div class="footer-bottom-wrapper">
+                <h4>ABOUT US</h4>
+                <ul style="list-style: none;">
+                    <li>About the LEGO Group</li>
+                    <li>LEGO® news</li>
+                    <li>Sustainability</li>
+                    <li>Supply chain transparency statement</li>
+                    <li>LEGO product certification</li>
+                    <li>LEGO Jobs</li>
+                    <li>LEGO Compliance Line</li>
+                </ul>
+            </div>
+            <div class="footer-bottom-wrapper">
+                <h4>SUPORT</h4>
+                <ul style="list-style: none;">
+                    <li>Contact us</li>
+                    <li>Find building instructions</li>
+                    <li>Replacement parts</li>
+                    <li>Deliveries and returns</li>
+                    <li>Payment methods</li>
+                    <li>Terms & Conditions</li>
+                    <li>Product recalls</li>
+                </ul>
+            </div>
+            <div class="footer-bottom-wrapper">
+                <h4>MORE FROM US</h4>
+                <ul style="list-style: none;">
+                    <li>LEGO® LIFE</li>
+                    <li>LEGO Education</li>
+                    <li>LEGO Ideas</li>
+                    <li>LEGO Foundation</li>
+                    <li>Affiliate Program</li>
+                    <li>LEGO Braille Bricks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
