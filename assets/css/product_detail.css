@@ -1,0 +1,106 @@
+/* Styles for the header and navigation menu */
+#header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    position: fixed; /* Keep header fixed at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+#nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    margin: 0 15px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+#nav li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.search-btn {
+    position: absolute;
+    right: 20px; /* Position search button on the right */
+    top: 15px;
+    cursor: pointer;
+}
+
+.search-btn i {
+    font-size: 20px;
+    color: black;
+}
+
+/* Ensure body content doesn't hide behind the fixed header */
+body {
+    padding-top: 60px;
+}
+
+/* Styles for the logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 55px;
+}
+
+/* Styles for the main content */
+main .product-details {
+    margin-top: 30px;
+}
+
+/* Styles for the footer */
+#footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer-container1, .footer-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    text-align: center;
+}
+
+.footer-information {
+    margin: 5px 0;
+}
+
+.footer-bottom-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-bottom-wrapper h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-bottom-wrapper ul {
+    padding: 0;
+}
+
+.footer-bottom-wrapper ul li {
+    margin: 5px 0;
+}
