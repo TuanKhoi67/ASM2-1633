@@ -1,125 +1,97 @@
-.thumbnail-carousel {
-    overflow-x: auto;
-    white-space: nowrap;
-    margin-top: 20px;
-    display: none; /* Hide the thumbnail carousel */
-}
+/* Custom CSS for LEGO product detail page */
 
+/* Styles for the thumbnail images */
 .thumbnail-carousel img {
-    width: 100px; /* Adjust width as needed */
-    height: auto; 
-    margin-right: 10px; 
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .thumbnail-carousel img:hover {
-    transform: scale(1.2); 
+    border-color: #007bff; /* Color on hover */
 }
 
 /* Styles for the header and navigation menu */
 #header {
     background-color: #f8f9fa;
     padding: 10px 0;
-    position: fixed; /* Keep header fixed at the top */
-    width: 100%; /* Full width */
-    top: 0; /* Align to the top */
-    z-index: 1000; /* Ensure it stays on top */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-#nav {
-    display: flex;
-    justify-content: center; /* Center the navigation items */
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#header .logo img {
+    max-width: 50px;
+    height: auto;
 }
 
 #nav li {
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
 #nav li a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 5px 10px;
+    color: #343a40;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 #nav li a:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-.search-btn {
-    position: absolute;
-    right: 20px; /* Position search button on the right */
-    top: 15px;
-    cursor: pointer;
-}
-
-.search-btn i {
-    font-size: 20px;
-    color: black;
-}
-
-/* Ensure body content doesn't hide behind the fixed header */
-body {
-    padding-top: 60px;
-}
-
-/* Styles for the logo */
-.logo {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.logo img {
-    max-height: 55px;
-}
-
-/* Styles for the main content */
-main .product-details {
-    margin-top: 30px;
+    color: #007bff; /* Color on hover */
 }
 
 /* Styles for the footer */
 #footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer-container1 {
     background-color: #f8f9fa;
     padding: 20px 0;
 }
 
-.footer-container1, .footer-container2 {
+.footer-container2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-wrapper {
     text-align: center;
+    padding: 20px 0;
+}
+
+.footer-wrapper .logo img {
+    max-width: 80px;
+    height: auto;
 }
 
 .footer-information {
-    margin: 5px 0;
+    margin-bottom: 10px;
 }
 
 .footer-bottom-wrapper {
-    text-align: center;
-    margin: 20px 0;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .footer-bottom-wrapper h4 {
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .footer-bottom-wrapper ul {
     padding: 0;
+    list-style-type: none;
 }
 
 .footer-bottom-wrapper ul li {
-    margin: 5px 0;
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .thumbnail-carousel {
+        text-align: center;
+    }
 }
