@@ -207,9 +207,11 @@ html {
 }
 .payment
 {
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-left:20px ;
     background: #fff;
-    flex: 1;
+    padding: 20px;
     
 }
 .section-payment
