@@ -1,110 +1,23 @@
-/* Custom CSS for LEGO product detail page */
-
-/* General styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
-/* Styles for the thumbnail images */
-.thumbnail-carousel img {
-    display: block;
-    width: 100%;
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease;
-    cursor: pointer;
-}
-
-.thumbnail-carousel img:hover {
-    border-color: #007bff; /* Color on hover */
-}
-
-/* Styles for the header and navigation menu */
-#header {
-    background-color: #f8f9fa;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#header .logo img {
-    max-width: 50px;
-    height: auto;
-}
-
-#nav {
-    margin-left: auto;
-}
-
-#nav li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-#nav li a {
-    text-decoration: none;
-    color: #343a40;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-#nav li a:hover {
-    color: #007bff; /* Color on hover */
-}
-
-/* Styles for the footer */
-#footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 40px 0;
-    margin-top: 50px;
-}
-
-.footer-container1 {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-container2 {
+.img-slide {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e4e5ec;
+    height: 400px;
 }
 
-.footer-wrapper {
-    text-align: center;
-    padding: 20px 0;
+.img-slide img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
-.footer-wrapper .logo img {
-    max-width: 80px;
-    height: auto;
+.thumbnail-carousel img {
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover;
+     margin-right: 5px; 
 }
-
-.footer-information {
-    margin-bottom: 10px;
-}
-
-.footer-bottom-wrapper {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.footer-bottom-wrapper h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer-bottom-wrapper ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer-bottom-wrapper ul li {
-    margin-bottom: 8px;
-}
+    
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

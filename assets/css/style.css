@@ -307,7 +307,7 @@ html {
 }
 
 .product-leaf:hover .product-styles img {
-    transform: scale(1.1); /* Added to scale the image on hover */
+    transform: scale(1.1);
 }
 
 .text-wrapper {
