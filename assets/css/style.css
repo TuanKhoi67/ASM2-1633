@@ -10,7 +10,7 @@ html {
 
 #header {
     height: 75px;
-    background-color: rgb(255, 225, 0);
+    background-color: #ffd502;
     padding: 0px 30px;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@ html {
 #nav li:hover {
     text-decoration: underline;
 }
-
+/* search */
 .search-btn > a{
     padding-left: 20px;
 }
@@ -68,6 +68,32 @@ html {
 .search-btn:hover i {
     color: #000; 
 }
+
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 1;
+    right: 140px;
+    background-color: rgb(152, 206, 121);
+    border: 1px solid #5a2d2d;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 1px;
+    
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
 
 #slider{
     margin-top: 75px;

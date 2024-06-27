@@ -24,3 +24,22 @@
 .menu {
     margin-bottom: 10%;
 }
+.orange .btn{
+    color: #ffffff;
+}
+.orange .btn-success-orange{ 
+    color: #ffffff;  
+    background-color: #e96f14;
+    border: 1px solid #e96f14;
+} 
+.orange .btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #1cc584;
+}
+
+.orange .btn-success-orange:hover {
+    color: black;
+    background-color: #fff;
+    border: 1px solid #e96f14;
+} 
+
