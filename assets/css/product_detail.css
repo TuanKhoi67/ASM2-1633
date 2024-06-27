@@ -17,7 +17,11 @@
     object-fit: cover;
      margin-right: 5px; 
 }
-    
+
+.backstore{
+    color: rgb(230, 11, 11);
+    text-decoration: none;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
