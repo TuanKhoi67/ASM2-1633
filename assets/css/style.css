@@ -48,6 +48,7 @@ html {
 /* search */
 .search-btn > a{
     padding-left: 20px;
+    text-decoration: none;
 }
 
 .search-btn {
@@ -63,10 +64,6 @@ html {
 .search-btn i {
     color: #333;
     transition: color 0.3s ease;
-}
-
-.search-btn:hover i {
-    color: #000; 
 }
 
 .search-bar {
